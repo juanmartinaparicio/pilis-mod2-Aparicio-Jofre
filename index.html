@@ -56,8 +56,43 @@
         <section id="registro">
             <h1>REGISTRO</h1>
             <div>
-                <form action="">
+                <form action="script.php" method="post">
+                    <h2>Complete el formulario para asistir al evento</h2>
 
+                    <fieldset>
+                        <legend>Registro</legend><br>
+                        <fieldset>
+                            <legend>Datos de Participante</legend>
+                            <label for="">Tenes Usuario Activo?</label>
+                            <input type="checkbox"><br><br>
+                            <label for="">Nombre y Apelllido</label>
+                            <input type="text"><br><br>
+                            <label for="">DNI</label>
+                            <input type="number"><br><br>
+                            <label for="">Telefono</label>
+                            <input type="number"><br><br>
+                        </fieldset><br>
+                        <fieldset>
+                            <legend>Charlas disponibles</legend>
+                            <input type="checkbox">
+                            <label for="">Acepto las politicas de inscripcion</label><br>
+                            <input type="checkbox">
+                            <label for="">Acepto las politicas de inscripcion</label><br>
+                            <input type="checkbox">
+                            <label for="">Acepto las politicas de inscripcion</label><br>
+                            <input type="checkbox">
+                            <label for="">Acepto las politicas de inscripcion</label><br>
+                            <input type="checkbox">
+                            <label for="">Acepto las politicas de inscripcion</label><br>
+                        </fieldset><br>
+                        <label for="textarea">Dejanos Tus Comentarios</label><br>
+                        <textarea name="textarea" rows="5" cols="30" id="textarea">
+                        </textarea><br><br>
+                        
+                        <label for="">Acepto las <a href="">Politicas</a> de inscripcion</label>
+                        <input type="checkbox"><br><br>
+                        <input type="submit">
+                    </fieldset>
                 </form>
             </div>
         </section>
