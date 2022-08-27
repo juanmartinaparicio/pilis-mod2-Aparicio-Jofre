@@ -1,30 +1,84 @@
-/* fetch ()
+// funcion que captura datos del registro
+/* const getVaueInput = () => {
+let inputValue1 = document.querySelector("#name").value;
+let inputValue2 = document.querySelector("#dni").value;
+let inputValue3 = document.querySelector("#tel").value;
+let inputValue4 = document.querySelector("#politic").value;
+console.log(inputValue4);
+} */
 
-let parrafo= document.getElementById("para1");
-console.log(parrafo);
+//funcion que recibe evento click
+function onClick(event) {
+event.preventDefault();
 
-console.log(parrafo1.textcontent);
+const mensaje = {
+    name: document.getElementById("name").value,
+    dni: document.getElementById("dni").value,
+    tel: document.getElementById("tel").value,
+    /* ch1: document.getElementById("charla1").value,
+    ch2: document.getElementById("charla2").value,
+    ch3: document.getElementById("charla3").value,
+    ch4: document.getElementById("charla4").value,
+    ch5: document.getElementById("charla5").value, */
+    mensaje: document.getElementById("textarea").value,
+    //politicas: document.getElementById("politics").value,
+}
+console.log(mensaje);
 
-let listaDesordenada = document.createElement("ul");
-document.body.appendChild(listaDesordenada);
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: JSON.stringify(mensaje),
+    headers: { "Content-type": "application/json; charset=UTF-8" },
+})
+    .then((response) => response.json())
+    .then((json) => {
+    console.log(json);
+    Swal.fire("Enviado", "Gracias por tu comentario", "success");
+    cleanForm();
+      /* redirectUrl(); */
+    })
+    .catch((err) => console.log(err));
+}
+
+function cleanForm() {
+    let formulario = document.getElementById('formulario');    
+    formulario.reset();    
+}
+function redirectUrl(){
+    window.location.href = "https://google.com";    
+}
+
+let boton = document.getElementById("enviar");
+boton.addEventListener("click", onClick);
+
+
+
+//prueba de promesa
+/* fetch("https://jsonplaceholder.typicode.com/todos/1")
+.then((response) => response.json())
+.then((json) => console.log(json));
  */
+
+
+// funcion asinconica de tres pasos, 1 busca ip, 2 busca ubicacion geografica, 3 busca informacion del clima
 async function getIp() {
-    try{
-        let response = await fetch("https://api.ipify.org?format=json");
-        let ipResponse = await response.json();
-        console.log(ipResponse);
+try {
+    let response = await fetch("https://api.ipify.org?format=json");
+    let ipResponse = await response.json();
+    console.log(ipResponse);
 
-        let responseLocation =await fetch ("http://ip-api.com/json/"+ ipResponse.ip);
-        let locationResponse = await responseLocation.json();
-        console.log(locationResponse);
-        console.log(locationResponse.lat);
+    let responseLocation = await fetch(
+    "http://ip-api.com/json/" + ipResponse.ip
+    );
+    let locationResponse = await responseLocation.json();
+    console.log(locationResponse);
 
-        let weather = await fetch ("http://api.openweathermap.org/data/3.0/onecall?lat="+locationResponse.lat+"&lon="+locationResponse.lon+"&exclude="+current+"&appid=82f377eba1003bad75793254d942930d")
-        let weatherResponse = await responseWeather.json();
-        console.log(weatherResponse);
-        } catch {
-            console.log("Algo paso, no se pudo resolver...")
-        }   
+    let responseWeather = await fetch("http://api.openweathermap.org/data/3.0/onecall?lat="+locationResponse.lat+"&lon="+locationResponse.lon+"&exclude=current&appid=82f377eba1003bad75793254d942930d");
+    //let responseWeather = await fetch ("http://api.openweathermap.org/data/3.0/onecall?lat=-24.18325&lon=-65.33134&exclude=current&appid=82f377eba1003bad75793254d942930d")
+    let weatherResponse = await responseWeather.json();
+    console.log(weatherResponse);
+  } catch {
+    console.log("Algo paso, no se pudo resolver...");
+  }
 }
 getIp();
-

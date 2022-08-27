@@ -4,93 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="./Recursos/favicon.ico"/>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <figure>
+        <img
+        src="./Recursos/escudoblanco.png"
+        alt="escudoblanco"
+        width="75"
+        height="75"
+        id="escudoblanco"
+        />
+    </figure>
+    <title>Evento Vitivinícola</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Inicio</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#us">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#evento">Sobre El Evento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#registro">Registro</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#clima">Clima</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-us">Contáctanos</a>
-                    </li>
-                    </ul>
+            <nav id="navbar" class="navbar">
+                <div class="navbar">
+                <a href="#home">Inicio</a>
+                <a href="#us">Quienes Somos</a>
+                <a href="#evento">Sobre el Evento</a>
+                <a href="#registro">Registro</a>
+                <a href="#ubicacion">Como Llegar</a>
+                <a href="#clima">Clima</a>
+                <a href="#contacto">Contáctanos</a>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <ul class="slider">
+            </nav>
+        
+            <div id="container">
+                <ul class="slider">
                 <li id="slide1">
-                    <img src="Recursos/93A1109a.jpg">
+                    <img src="Recursos/93A1109a.jpg" />
                 </li>
                 <li id="slide2">
-                    <img src="Recursos/1200px-Cafayatemountains.jpg">
+                    <img src="Recursos/1200px-Cafayatemountains.jpg" />
                 </li>
                 <li id="slide3">
-                    <img src="Recursos/93A1514-a.jpg">
+                    <img src="Recursos/93A1514-a.jpg" />
                 </li>
                 <li id="slide4">
-                    <img src="Recursos/93A1531-Bearbeitet.jpg">
+                    <img src="Recursos/93A1531-Bearbeitet.jpg" />
                 </li>
                 <li id="slide5">
-                    <img src="Recursos/93A2023-Bearbeitet.jpg">
+                    <img src="Recursos/93A2023-Bearbeitet.jpg" />
                 </li>
                 <li id="slide6">
-                    <img src="Recursos/93A2063-Bearbeitet.jpg">
+                    <img src="Recursos/93A2063-Bearbeitet.jpg" />
                 </li>
                 <li id="slide7">
-                    <img src="Recursos/93A2116-Bearbeitet.jpg">
+                    <img src="Recursos/93A2116-Bearbeitet.jpg" />
                 </li>
                 <li id="slide8">
-                    <img src="Recursos/93A2128-Bearbeitet.jpg">
+                    <img src="Recursos/93A2128-Bearbeitet.jpg" />
                 </li>
                 <li id="slide9">
-                    <img src="Recursos/93A2595-Bearbeitet.jpg">
+                    <img src="Recursos/93A2595-Bearbeitet.jpg" />
                 </li>
                 <li id="slide10">
-                    <img src="Recursos/93A3418-Bearbeitet.jpg">
+                    <img src="Recursos/93A3418-Bearbeitet.jpg" />
                 </li>
                 <li id="slide11">
-                    <img src="Recursos/93A3461-Bearbeitet.jpg">
+                    <img src="Recursos/93A3461-Bearbeitet.jpg" />
                 </li>
                 <li id="slide12">
-                    <img src="Recursos/93A3469-Bearbeitet.jpg">
+                    <img src="Recursos/93A3469-Bearbeitet.jpg" />
                 </li>
                 <li id="slide13">
-                    <img src="Recursos/93A7780-Bearbeitet.jpg">
+                    <img src="Recursos/93A7780-Bearbeitet.jpg" />
                 </li>
                 <li id="slide14">
-                    <img src="Recursos/IMG_3069-Bearbeitet.jpg">
+                    <img src="Recursos/IMG_3069-Bearbeitet.jpg" />
                 </li>
                 <li id="slide15">
-                    <img src="Recursos/Quebrada-de-Humahuaca.jpg">
+                    <img src="Recursos/Quebrada-de-Humahuaca.jpg" />
                 </li>
                 <li id="slide16">
-                    <img src="Recursos//Vinos.png">
+                    <img src="Recursos//Vinos.png" />
                 </li>
-            </ul>
-            <ul class="menu">
+                </ul>
+                <ul class="menu">
                 <li>
                     <a href="#slide1">1</a>
                 </li>
@@ -137,104 +130,144 @@
                     <a href="#slide15">15</a>
                 </li>
                 <li>
-                    <a href="#slide16">16</a>
+                <a href="#slide16">16</a>
                 </li>
-            </ul>
-        </div>
-        <section id="home">
-            <h1>Inicio</h1>
-            <span>HAZ HISTORIA
-                CON NOSOTROS</span>
-            <p>Se parte de la primera Expo Vitivinícola De Altura dedicada a la viticultura y la tecnología que se celebrará del 16 al 18 de noviembre de 2022.Conoce las mejores herramientas y tecnologías, productos y técnicas para la viticultura como para el tratamiento de la uva y la vinificación.</p>
-            <p>Nuestro objetivo es ser un punto de referencia para la cadena de suministro del vino tanto a nivel nacional como internacional, buscando una sinergia entre distintos productores y comerciantes de la viticultura.</p>        
-            <p>Nuestra meta será guiar e inspirar a los participantes creando ideas para el debate y el intercambio con el fin de ofrecer una contribución significativa a la evolución del sector.</p>        
-            <p>Participando juntos lograremos la creación de nuevas oportunidades para negocios crecimientos  a través de la profundización de la investigación, contribuyendo así con la evolución en el sector.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/N09zv4rXev0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        
-        <section id="us">
+                </ul>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <section id="home">
+                <br />
+                <h1>PRIMERA EXPO VITIVINICOLA DE ALTURA</h1>
+                <br />
+                <span>HAZ HISTORIA CON NOSOTROS</span>
+                <br /><br />
+                <p>
+                Se parte de la primera Expo Vitivinícola De Altura dedicada a la
+                viticultura y la tecnología que se celebrará del 16 al 18 de noviembre
+                de 2022.Conoce las mejores herramientas y tecnologías, productos y
+                técnicas para la viticultura como para el tratamiento de la uva y la
+                vinificación.
+                <br /><br />
+                Nuestro objetivo es ser un punto de referencia para la cadena de
+                suministro del vino tanto a nivel nacional como internacional,
+                buscando una sinergia entre distintos productores y comerciantes de la
+                viticultura.
+                <br /><br />
+                Nuestra meta será guiar e inspirar a los participantes creando ideas
+                para el debate y el intercambio con el fin de ofrecer una contribución
+                significativa a la evolución del sector.
+                <br /><br />
+                Participando juntos lograremos la creación de nuevas oportunidades
+                para negocios crecimientos a través de la profundización de la
+                investigación, contribuyendo así con la evolución en el sector.
+                </p>
+                <br />
+                <iframe
+                width="900"
+                height="510"
+                src="https://www.youtube.com/embed/N09zv4rXev0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                ></iframe>
+            </section>
+            <br />
+            <section id="us">
             <h1>Quienes Somos</h1>
-            <p>Nos dedicamos a compartir conocimiento sobre todo lo relacionado con la elaboración del vino, ofreciendo conferencias y exposiciones impartidas por expertos en el tema vinícola.</p>
-        </section>
-
+            <br />
+            <p>
+                Nos dedicamos a compartir conocimiento sobre todo lo relacionado con
+                la elaboración del vino, ofreciendo conferencias y exposiciones
+                impartidas por expertos en el tema vinícola.
+            </p>
+            </section>
+    </header>
+    <main>
         <section id="evento">
             <h1>Sobre El Evento</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis quam natus, sunt minus hic sed quisquam accusantium, autem corporis fugiat nostrum dolor. Nemo et enim reprehenderit amet aut adipisci ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestias rem eligendi dolore natus, officia itaque sequi rerum facilis nisi. Voluptate iste distinctio libero odio eos sunt deserunt. Neque, exercitationem?</p>
+            <br />
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet fugit
+                error voluptate ducimus voluptatem dolorum labore veniam, perferendis
+                possimus corrupti ipsam iusto inventore earum, expedita, repellat sit
+                vel velit dolore.
+            </p>
+            <br />
         </section>
-        
         <section id="registro">
             <h1>REGISTRO</h1>
+            <br />
             <div>
-                <form action="script.php" method="post">
+                <form action="script.php" id="formulario">
                     <h2>Complete el formulario para asistir al evento</h2>
 
                     <fieldset>
                         <legend>Registro</legend><br>
                         <fieldset>
                             <legend>Datos de Participante</legend>
+                            <br /><br />
                             <label for="">Tenes Usuario Activo?</label>
-                            <input type="checkbox"><br><br>
-                            <label for="name">Nombre y Apelllido</label>
-                            <input type="text" id="name"><br><br>
-                            <label for="dni">DNI</label>
-                            <input type="number" id="dni"><br><br>
-                            <label for="tel">Telefono</label>
-                            <input type="number" id="tel"><br><br>
-                        </fieldset><br>
+                            <input type="checkbox" /><br /><br />
+                            <label for="">Nombre y Apelllido</label>
+                            <input type="text" /><br /><br />
+                            <label for="">DNI</label>
+                            <input type="number" /><br /><br />
+                            <label for="">Telefono</label>
+                            <input type="tel" /><br /><br />
+                        </fieldset><br />
+
                         <fieldset>
                             <legend>Charlas disponibles</legend>
-                            <input type="checkbox">
+                            <input type="checkbox" id="charla1">
                             <label for="">Acepto las politicas de inscripcion</label><br>
-                            <input type="checkbox">
+                            <input type="checkbox" id="charla2">
                             <label for="">Acepto las politicas de inscripcion</label><br>
-                            <input type="checkbox">
+                            <input type="checkbox" id="charla3">
                             <label for="">Acepto las politicas de inscripcion</label><br>
-                            <input type="checkbox">
+                            <input type="checkbox" id="charla4">
                             <label for="">Acepto las politicas de inscripcion</label><br>
-                            <input type="checkbox">
+                            <input type="checkbox" id="charla5">
                             <label for="">Acepto las politicas de inscripcion</label><br>
                         </fieldset><br>
-                        <label for="textarea">Dejanos Tus Comentarios</label><br>
+
+                        <label for="textarea">Dejanos Tus Comentarios</label><br><br> 
                         <textarea name="textarea" rows="5" cols="30" id="textarea">
                         </textarea><br><br>
                         
                         <label for="">Acepto las <a href="">Politicas</a> de inscripcion</label>
-                        <input type="checkbox"><br><br>
-                        <button type="button" onclick="getVaueInput()">Enviar</button>
+                        <input type="checkbox" id="politic"><br><br>
+                        <button type="button" id="enviar">Enviar</button>
+
                     </fieldset>
                 </form>
             </div>
-        </section>
-            
-        <section>
-            <h1>Elementos del dom</h1>
-            <p id ="para1">Primer parrafo</p>
-            <p id ="para2">Segundo parrafo</p>
-            <h1>Programas de television</h1>
-            <ul class="list">
-                <li>golden girls</li>
-                <li>Archer</li>
-                <li>Rick and marty</li>
-                <li>The Crown</li>
-            </ul>
-
-        </section>
-
+        </section><br>
         <section id="clima">
             <h1>Clima</h1>
             <p>Asi esta el tiempo en el lugar del evento ciudad cultural</p>4
-            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3639.6712550161415!2d-65.33229196474424!3d-24.183246325717864!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x941b0ee2033f07f3%3A0xc77a811c6a4b0561!2sCiudad%20Cultural%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!3m2!1d-24.1834177!2d-65.3312979!5e0!3m2!1ses-419!2sar!4v1661390046479!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-        </section> 
+        </section><br>
+        <section>
+            <h1>Como llegar</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3639.6712550161415!2d-65.33229196474424!3d-24.183246325717864!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x941b0ee2033f07f3%3A0xc77a811c6a4b0561!2sCiudad%20Cultural%2C%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!3m2!1d-24.1834177!2d-65.3312979!5e0!3m2!1ses-419!2sar!4v1661390046479!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </section>
+        <section>
+            <aside>
+            </aside>
+        </section>
     </main>
     <footer>
         <section id="contacto">
             <h1>Contacto</h1>
+            <figure>
+                <img src="./Recursos/escudoblanco.png" alt="escudoblanco" width="75" height="75" id="escudoblanco"/>
+            </figure>
             <ul class="socials">
-                <li><a class="socials-icon" href="https://github.com/juanmartinaparicio"> <i class="bi bi-github"></i></a></li>
-                <li><a class="socials-icon" href="https://www.linkedin.com/in/juan-mart%C3%ADn-aparicio-6b993552/"><i class="bi bi-linkedin"></i></a></li>
-                <li><a class="socials-icon" href="https://twitter.com/juanm_aparicio"><i class="bi bi-twitter"></i></a></li>
-                <li><a class="socials-icon" href="https://www.facebook.com/juan.m.aparicio"><i class="bi bi-facebook"></i></a></li>
                 <li><a class="socials-icon" href="https://www.instagram.com/juanm_aparicio/"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="socials-icon" href="https://wa.me/5493886070595?text=Hola,%20tengo%20una%20consulta%20por%20la%20expo%20de%20Vitivinicultura%20de%20Altura."><i class="bi bi-instagram"></i>Whastapp</a></li><br>
             </ul>
 
         </section>
