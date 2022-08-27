@@ -209,3 +209,41 @@
     text-align: center;
     margin: 0 auto;
   }
+  .social-bar{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font: size 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon{
+    color:white;
+    text-decoration: none;
+    padding: 1rem;
+    display: flex;
+    transition: all 0.5s;
+}
+.icon-whatsapp{
+    background-color:#2a8d3a;
+}
+.icon-facebook{
+    background-color:#2e406e;
+}
+.icon-instagram{
+    background-color:#aa1d80;
+}
+
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}

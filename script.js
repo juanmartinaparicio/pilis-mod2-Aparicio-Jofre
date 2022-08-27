@@ -67,8 +67,8 @@ try {
     let locationResponse = await responseLocation.json();
     console.log(locationResponse);
 
-    let responseWeather = await fetch("http://api.openweathermap.org/data/3.0/onecall?lat="+locationResponse.lat+"&lon="+locationResponse.lon+"&exclude=current&appid=82f377eba1003bad75793254d942930d");
-    //let responseWeather = await fetch ("http://api.openweathermap.org/data/3.0/onecall?lat=-24.18325&lon=-65.33134&exclude=current&appid=82f377eba1003bad75793254d942930d")
+    let responseWeather = await fetch("http://api.openweathermap.org/data/2.5/weather?lat="+locationResponse.lat+"&lon="+locationResponse.lon+"&exclude=current&appid=82f377eba1003bad75793254d942930d");
+    //let responseWeather = await fetch ("http://api.openweathermap.org/data/2.5/weather?lat=-24.18325&lon=-65.33134&exclude=current&appid=82f377eba1003bad75793254d942930d")
     let weatherResponse = await responseWeather.json();
     console.log(weatherResponse);
   } catch {
