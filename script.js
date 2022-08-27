@@ -15,14 +15,8 @@ const mensaje = {
     name: document.getElementById("name").value,
     dni: document.getElementById("dni").value,
     tel: document.getElementById("tel").value,
-    /* ch1: document.getElementById("charla1").value,
-    ch2: document.getElementById("charla2").value,
-    ch3: document.getElementById("charla3").value,
-    ch4: document.getElementById("charla4").value,
-    ch5: document.getElementById("charla5").value, */
     mensaje: document.getElementById("textarea").value,
-    //politicas: document.getElementById("politics").value,
-}
+}    
 console.log(mensaje);
 
 fetch("https://jsonplaceholder.typicode.com/posts", {
